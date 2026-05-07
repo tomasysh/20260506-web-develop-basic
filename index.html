@@ -21,6 +21,9 @@
           <li>
             <a href="#FAQ">FAQ</a>
           </li>
+          <li>
+            <a href="#與我聯繫">與我聯繫</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -165,6 +168,29 @@
         </dl>
       </article>
     </article>
+    <sction id="與我聯繫">
+      <form action="/submit-profile" method="post">
+        <fieldset>
+          <legend>個人資料</legend>
+          <label for="name">姓名:</label>
+          <input type="text" id="name" name="user_name2" /><br />
+
+          <label for="email">電子郵件:</label>
+          <input type="email" id="email" name="user_email" />
+        </fieldset>
+        <fieldset>
+          <legend>訂閱選項</legend>
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+            value="yes"
+          />
+          <label for="newsletter">訂閱電子報</label>
+        </fieldset>
+        <button type="submit">提交</button>
+      </form>
+    </sction>
     <footer>Copyright © 2026 李大明. All rights reserved.</footer>
   </body>
 </html>
