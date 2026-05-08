@@ -1,3 +1,11 @@
+* {
+  font-size: 18px;
+}
+
+#基本資料 {
+  background-color: aquamarine;
+}
+
 section {
   background-color: blanchedalmond;
   color: blueviolet;
@@ -5,4 +13,30 @@ section {
 
 .section-info {
   background-color: lightblue;
+  font-weight: bold;
+  font-style: italic;
 }
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+/* .section {
+  margin-top: 10px;
+}
+
+.pargrah {
+  margin-top: 10px;
+} */
