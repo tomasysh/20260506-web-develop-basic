@@ -1,14 +1,31 @@
 .container {
-  width: 500px;
+  width: 800px;
   height: 500px;
   margin: 20px;
+  /* padding: 20px; */
   background: lightgreen;
   border: 1px solid darkgreen;
+
+  display: flex;
+  /* 主軸排版 */
+  justify-content: space-around;
+  /* 副軸排版 */
+  align-items: center;
 }
 
 .item {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  /* height: 100px; */
   background: lightgray;
   border: 1px solid darkgray;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: column;
 }
