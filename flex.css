@@ -1,0 +1,14 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background: lightgreen;
+  border: 1px solid darkgreen;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+  border: 1px solid darkgray;
+}
