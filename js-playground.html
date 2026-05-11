@@ -13,16 +13,46 @@
         { name: "Zoe", age: 25 },
         { name: "Cathy", age: 35 },
       ];
-      // 是不是每一個人都 30 歲以上
-      console.log(
-        "是不是每一個人都 30 歲以上? ",
-        users.every((user) => user.age > 30),
+
+      const nameList = users.map((user) => user.name);
+      console.log("nameList", nameList);
+
+      const grouedUsers = users.reduce(
+        (acc, currUser) => {
+          // 三元判斷式 判斷是 ? true 執行這裡 : false 執行這裡
+          return currUser.age > 30
+            ? { ...acc, oldUsers: [...acc.oldUsers, currUser] }
+            : { ...acc, youngUsers: [...acc.youngUsers, currUser] };
+        },
+        { youngUsers: [], oldUsers: [] },
       );
-      // 有沒有一個人未滿 30 歲？
-      console.log(
-        "有沒有一個人未滿 30 歲？ ",
-        users.some((user) => user.age < 30),
-      );
+
+      // 1. 什麼是三元判斷式
+      //   if (currUser.age > 30) {
+      //     return sdfafds
+      //   } else {
+      //     return asfasfdsa
+      //   }
+      // 2. 什麼時候不用寫 return ? => 函式，且只有一行，沒有使用 {} 的時候
+      // 3. ... 是什麼啦？ ... 是解構，是 JS 的淺層拷貝
+
+      console.log("grouedUsers==> ", grouedUsers);
+
+      //   const ageGroups = Object.groupBy((user) => user.age > 30);
+      //   console.log("ageGroups: ", ageGroups);
+
+      //   const saves = [100, 200, 300];
+      //   const total = saves.reduce(
+      //     (accumulator, currentItem) => accumulator + currentItem,
+      //     0,
+      //   );
+      //   console.log("total", total);
+
+      const deepClone = (objData) => {
+        return JSON.parse(JSON.stringify(objData));
+      };
+
+      const b = deepClone(a);
     </script>
   </body>
 </html>
