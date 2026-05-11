@@ -9,15 +9,20 @@
     <h1 id="title">這是 h1 標籤</h1>
     <script>
       const users = [
-        { name: "Andy", age: 40 },
-        { name: "Zoe", age: 20 },
+        { name: "Andy", age: 45 },
+        { name: "Zoe", age: 25 },
+        { name: "Cathy", age: 35 },
       ];
-      // 取得姓名清單， map
-      const nameList = users.map((user) => user.name);
-      console.log("nameList==>", nameList);
-      // 留下 age > 39 的人
-      const oldUserList = users.filter((user) => user.age > 39);
-      console.log("oldUserList==>", oldUserList);
+      // 是不是每一個人都 30 歲以上
+      console.log(
+        "是不是每一個人都 30 歲以上? ",
+        users.every((user) => user.age > 30),
+      );
+      // 有沒有一個人未滿 30 歲？
+      console.log(
+        "有沒有一個人未滿 30 歲？ ",
+        users.some((user) => user.age < 30),
+      );
     </script>
   </body>
 </html>
