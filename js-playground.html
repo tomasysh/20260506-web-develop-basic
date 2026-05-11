@@ -53,6 +53,16 @@
       };
 
       const b = deepClone(a);
+
+      const sum = (n1, n2) => {
+        return n1 + n2;
+      };
+
+      sum(100, 100); // retrun 200
+      sum(100, "100"); // return '100100'
+
+      // JS 弱型別 是個老問題
+      // 微軟推出了 TypeScript 來解決問題
     </script>
   </body>
 </html>
