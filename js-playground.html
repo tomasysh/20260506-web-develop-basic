@@ -6,8 +6,21 @@
     <title>JS playground</title>
   </head>
   <body>
+    <h1 id="title">這是 h1 標籤</h1>
     <script>
-      alert("hello world");
+      //   alert("hello world");
+      const age = 23;
+      const titleDOM = document.getElementById("title");
+      if (age > 22) {
+        console.log("大學畢業");
+        titleDOM.innerHTML = "大學畢業";
+      } else if (age > 65) {
+        console.log("退休");
+        titleDOM.innerHTML = "退休";
+      } else {
+        console.log(未成年);
+        titleDOM.innerHTML = "未成年";
+      }
     </script>
   </body>
 </html>
