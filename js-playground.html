@@ -4,23 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS playground</title>
-    <script>
-      //   alert("hello world");
-      const age = 23;
-      const titleDOM = document.getElementById("title"); // null
-      if (age > 22) {
-        console.log("大學畢業");
-        titleDOM.innerHTML = "大學畢業"; // null.innerHTML -> type error null 沒有 innerHTML
-      } else if (age > 65) {
-        console.log("退休");
-        titleDOM.innerHTML = "退休";
-      } else {
-        console.log("未成年");
-        titleDOM.innerHTML = "未成年";
-      }
-    </script>
   </head>
   <body>
     <h1 id="title">這是 h1 標籤</h1>
+    <script>
+      //   alert("hello world");
+      //   const age = 18;
+      //   const titleDOM = document.getElementById("title");
+      //   if (age === 18) {
+      //     console.log("就讀大一 fresh，覺得人生充滿希望");
+      //     titleDOM.innerHTML = "就讀大一 fresh，覺得人生充滿希望";
+      //   } else if (age > 22) {
+      //     console.log("大學畢業");
+      //     titleDOM.innerHTML = "大學畢業";
+      //   } else if (age > 65) {
+      //     console.log("退休");
+      //     titleDOM.innerHTML = "退休";
+      //   } else {
+      //     console.log("沒有任何符合的條件");
+      //     titleDOM.innerHTML = "沒有任何符合的條件";
+      //   }
+      //   let i = 0;
+      //   console.log("現在是第" + (i + 1) + "圈");
+      //   i = i + 1;
+      //   console.log("現在是第" + (i + 1) + "圈");
+      //   i = i + 1;
+      //   console.log("現在是第" + (i + 1) + "圈");
+      //   i = i + 1;
+      //   console.log("現在是第" + (i + 1) + "圈");
+      //   i = i + 1;
+      //   console.log("現在是第" + (i + 1) + "圈");
+
+      // i++ => i = i + 1;
+      // i-- => i = i - 1;
+
+      // 作用域(scope)
+      for (let i = 0; i < 5; i++) {
+        console.log("A.現在是第" + (i + 1) + "圈");
+      }
+      for (let i = 0; i < 5; i++) {
+        console.log("A.現在是第" + (i + 1) + "圈");
+      }
+    </script>
   </body>
 </html>
