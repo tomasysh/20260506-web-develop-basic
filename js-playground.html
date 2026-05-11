@@ -8,17 +8,16 @@
   <body>
     <h1 id="title">這是 h1 標籤</h1>
     <script>
-      const priceList = [100, 200, 300];
-      const discountPriceList = priceList.map((price) => price * 0.9);
-      console.log("discountPriceList-->", discountPriceList);
-
-      const mapPriceList = (list) => {
-        const resultList = [];
-        for (let i = 0; i < list.length; i++) {
-          resultList.push(list[i] * 0.9);
-        }
-        return resultList;
-      };
+      const users = [
+        { name: "Andy", age: 40 },
+        { name: "Zoe", age: 20 },
+      ];
+      // 取得姓名清單， map
+      const nameList = users.map((user) => user.name);
+      console.log("nameList==>", nameList);
+      // 留下 age > 39 的人
+      const oldUserList = users.filter((user) => user.age > 39);
+      console.log("oldUserList==>", oldUserList);
     </script>
   </body>
 </html>
