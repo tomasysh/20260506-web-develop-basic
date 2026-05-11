@@ -1,5 +1,5 @@
 .container {
-  width: 800px;
+  width: 500px;
   height: 500px;
   margin: 20px;
   /* padding: 20px; */
@@ -14,10 +14,11 @@
 }
 
 .item {
-  width: 250px;
+  width: 200px;
   /* height: 100px; */
   background: lightgray;
   border: 1px solid darkgray;
+  flex-shrink: 1;
 }
 
 .card__container {
@@ -28,4 +29,9 @@
 .card__footer {
   display: flex;
   flex-direction: column;
+}
+
+.item-1 {
+  order: 3;
+  flex-shrink: 2;
 }
