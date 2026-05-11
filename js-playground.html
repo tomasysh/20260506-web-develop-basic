@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS playground</title>
-  </head>
-  <body>
-    <h1 id="title">這是 h1 標籤</h1>
     <script>
       //   alert("hello world");
       const age = 23;
-      const titleDOM = document.getElementById("title");
+      const titleDOM = document.getElementById("title"); // null
       if (age > 22) {
         console.log("大學畢業");
-        titleDOM.innerHTML = "大學畢業";
+        titleDOM.innerHTML = "大學畢業"; // null.innerHTML -> type error null 沒有 innerHTML
       } else if (age > 65) {
         console.log("退休");
         titleDOM.innerHTML = "退休";
@@ -22,5 +19,8 @@
         titleDOM.innerHTML = "未成年";
       }
     </script>
+  </head>
+  <body>
+    <h1 id="title">這是 h1 標籤</h1>
   </body>
 </html>
